@@ -1,6 +1,7 @@
 # 敏感信息
 my.cnf
-
+my-prod.cnf
+scp-cnf-file.sh
 
 .idea/
 
