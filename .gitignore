@@ -2,6 +2,9 @@
 my.cnf
 my-prod.cnf
 scp-cnf-file.sh
+test.py
+
+my_tools/
 
 .idea/
 
