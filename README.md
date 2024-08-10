@@ -1,4 +1,4 @@
-Sruta's Personal Website
-Tech Stack:
+# Sruta's Personal Website
+## Tech Stack:
 - Django
 - MySQL
