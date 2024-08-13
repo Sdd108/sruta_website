@@ -17,6 +17,7 @@ class LeaveMessage(BaseModel):
     email = models.EmailField(max_length=254)
     phone = PhoneNumberField(region='CN')
     message = models.TextField()
+    client_ip = models.GenericIPAddressField(protocol='both', unpack_ipv4=False)
 
     def __str__(self):
         return f"{self.name}: {self.message[:50]}{'...' if len(self.message) > 50 else ''}"
