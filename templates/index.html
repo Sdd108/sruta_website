@@ -25,7 +25,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">Sruta</a>
+                <a class="navbar-brand" href="/">Sruta</a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -174,52 +174,95 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">称呼</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">“称呼”为必填项</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">“Email”为必填项</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">请填写正确的Email格式.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">电话</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">“电话”为必填项</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">留言</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">“留言”为必填项</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">提交</button>
-                        </form>
+                        
+{#                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">#}
+{#                            {% csrf_token %}#}
+{#                            <!-- Name input-->#}
+{#                            <div class="form-floating mb-3">#}
+{#                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />#}
+{#                                <label for="name">称呼</label>#}
+{#                                <div class="invalid-feedback" data-sb-feedback="name:required">“称呼”为必填项</div>#}
+{#                            </div>#}
+{#                            <!-- Email address input-->#}
+{#                            <div class="form-floating mb-3">#}
+{#                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />#}
+{#                                <label for="email">Email</label>#}
+{#                                <div class="invalid-feedback" data-sb-feedback="email:required">“Email”为必填项</div>#}
+{#                                <div class="invalid-feedback" data-sb-feedback="email:email">请填写正确的Email格式.</div>#}
+{#                            </div>#}
+{#                            <!-- Phone number input-->#}
+{#                            <div class="form-floating mb-3">#}
+{#                                <input class="form-control" id="phone" type="tel" placeholder="+86 186 8888 6666" data-sb-validations="required" />#}
+{#                                <label for="phone">电话</label>#}
+{#                                <div class="invalid-feedback" data-sb-feedback="phone:required">“电话”为必填项</div>#}
+{#                            </div>#}
+{#                            <!-- Message input-->#}
+{#                            <div class="form-floating mb-3">#}
+{#                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>#}
+{#                                <label for="message">留言</label>#}
+{#                                <div class="invalid-feedback" data-sb-feedback="message:required">“留言”为必填项</div>#}
+{#                            </div>#}
+{#                            <!-- Submit success message-->#}
+{#                            <!---->#}
+{#                            <!-- This is what your users will see when the form-->#}
+{#                            <!-- has successfully submitted-->#}
+{#                            <div class="d-none" id="submitSuccessMessage">#}
+{#                                <div class="text-center mb-3">#}
+{#                                    <div class="fw-bolder">Form submission successful!</div>#}
+{#                                    To activate this form, sign up at#}
+{#                                    <br />#}
+{#                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <!-- Submit error message-->#}
+{#                            <!---->#}
+{#                            <!-- This is what your users will see when there is-->#}
+{#                            <!-- an error submitting the form-->#}
+{#                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>#}
+{#                            <!-- Submit Button-->#}
+{#                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">提交</button>#}
+{#                        </form>#}
+                        
+                        
+                        <form id="contactForm" method="POST" action="{% url 'home:leave_message' %}">
+                        {% csrf_token %}
+                        
+                        <!-- Name input-->
+                        <div class="form-floating mb-3">
+                            {{ form.name }}
+                            <label for="name">称呼</label>
+                            <div class="invalid-feedback">{{ form.name.errors }}</div>
+                        </div>
+                        <!-- Email address input-->
+                        <div class="form-floating mb-3">
+                            {{ form.email }}
+                            <label for="email">Email</label>
+                            <div class="invalid-feedback">{{ form.email.errors }}</div>
+                        </div>
+                        <!-- Phone number input-->
+                        <div class="form-floating mb-3">
+                            {{ form.phone }}
+                            <label for="phone">电话</label>
+                            <div class="invalid-feedback">{{ form.phone.errors }}</div>
+                        </div>
+                        <!-- Message input-->
+                        <div class="form-floating mb-3">
+                            {{ form.message }}
+                            <label for="message">留言</label>
+                            <div class="invalid-feedback">{{ form.message.errors }}</div>
+                        </div>
+                        <!-- Submit Button-->
+                        <button class="btn btn-primary btn-xl" id="submitButton" type="submit">提交</button>
+                        
+                        <!-- 检查是否存在成功消息 -->
+                        {% if success_message %}
+                        <div class="alert alert-success" role="alert">
+                            {{ success_message }}
+                        </div>
+                        {% endif %}
+                    </form>
+                    
+                        
                     </div>
                 </div>
             </div>
