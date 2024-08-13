@@ -6,6 +6,10 @@ test.py
 
 my_tools/
 
+# migrations log
+blog/migrations
+home/migrations
+
 .idea/
 # static
 staticfiles
