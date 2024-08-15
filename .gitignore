@@ -20,6 +20,8 @@ staticfiles
 *.log
 *.pot
 *.pyc
+blog/__pycache__/
+home/__pycache__/
 __pycache__/
 local_settings.py
 media

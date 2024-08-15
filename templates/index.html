@@ -157,7 +157,7 @@
         <section class="page-section" id="contact">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">联系我</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">给我留言</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -275,34 +275,85 @@
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">深圳</h4>
                         <p class="lead mb-0">
-                            2215 John Daniel Drive
+                            广东省 深圳市 福田区 福田街道
                             <br />
-                            Clark, MO 65243
+                            福华一路6号 免税商务大厦
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                        <h4 class="text-uppercase mb-4">联系我</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!" data-bs-toggle="modal" data-bs-target="#wechatModal">
+                            <i class="fab fa-fw fa-weixin"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/Sdd108/" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-github"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://weibo.com/u/2838039622" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-weibo"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://x.com/zhipeng108" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-twitter"></i></a>
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                        <h4 class="text-uppercase mb-4">求真 求自由</h4>
                         <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
+                            贵有恒，何必三更眠五更起；<br>
+                            最无益，只怕一日曝十日寒。
                         </p>
                     </div>
+                    
                 </div>
             </div>
         </footer>
+
+        <!-- WeChat QR Code Modal -->
+{#        <div class="modal fade" id="wechatModal" tabindex="-1" aria-labelledby="wechatModalLabel" aria-hidden="true">#}
+{#            <div class="modal-dialog modal-dialog-centered">#}
+{#                <div class="modal-content">#}
+{#                    <div class="modal-header">#}
+{#                        <h5 class="modal-title" id="wechatModalLabel">加我的个人微信</h5>#}
+{#                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>#}
+{#                    </div>#}
+{#                    <div class="modal-body text-center">#}
+{#                        <img src="{% static 'home/assets/img/wechat-qr-code.jpg' %}" alt="WeChat QR Code" class="img-fluid">#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+
+        <div class="portfolio-modal modal fade" id="wechatModal" tabindex="-1" aria-labelledby="wechatModalLable" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">加我的微信</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="{% static 'home/assets/img/wechat-qr-code.jpg' %}" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4"></p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>粤ICP备2022109234号-1 Copyright &copy; Sruta 2024</small></div>
+            <div class="container"><small>粤ICP备2022109234号-1  Copyright &copy; Sruta 2024</small></div>
         </div>
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
